@@ -1,0 +1,58 @@
+{
+  "variant": "raw",
+  "rule": "iterative: exclude largest dataset with concentration>0.7 and n>=50, until V<0.35 or no candidates",
+  "excluded_sources": [
+    {
+      "dataset": "Hospital Cl\u00ednic de Barcelona",
+      "n_removed": 3036,
+      "concentration": 1.0
+    },
+    {
+      "dataset": "MILK study team",
+      "n_removed": 700,
+      "concentration": 0.7857142857142857
+    },
+    {
+      "dataset": "Sydney Melanoma Diagnostic Center at Royal Prince Alfred Hospital, Pascale Guitera",
+      "n_removed": 170,
+      "concentration": 0.8941176470588236
+    },
+    {
+      "dataset": "Department of Dermatology, Hospital Cl\u00ednic de Barcelona",
+      "n_removed": 143,
+      "concentration": 1.0
+    }
+  ],
+  "iteration_history": [
+    {
+      "n": 6714,
+      "cramers_v": 0.5406240295310171,
+      "n_candidates": 5
+    },
+    {
+      "n": 3678,
+      "cramers_v": 0.41930400219778036,
+      "n_candidates": 4
+    },
+    {
+      "n": 2978,
+      "cramers_v": 0.3994846646110058,
+      "n_candidates": 3
+    },
+    {
+      "n": 2808,
+      "cramers_v": 0.3709043129574246,
+      "n_candidates": 2
+    },
+    {
+      "n": 2665,
+      "cramers_v": 0.3118057454341598,
+      "n_candidates": 1
+    }
+  ],
+  "n_before": 6714,
+  "n_after": 2665,
+  "cramers_v_before": 0.5406240295310171,
+  "cramers_v_after": 0.3118057454341598,
+  "gate0": "PROCEED_WITH_CAVEAT"
+}

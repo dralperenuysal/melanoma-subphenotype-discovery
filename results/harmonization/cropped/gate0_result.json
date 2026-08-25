@@ -1,0 +1,14 @@
+{
+  "variant": "cropped",
+  "cramers_v": 0.5406240295310171,
+  "gate0": "STOP",
+  "n_datasets": 15,
+  "small_batches_n_lt_50": {
+    "Sydney Melanoma Diagnostic Center at Royal Prince Alfred Hospital": 46,
+    "Department of Dermatology, Medical University of Vienna": 28,
+    "The University of Queensland Diamantina Institute, The University of Queensland, Dermatology Research Centre": 17,
+    "Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris": 13,
+    "\"Repeated dermoscopic images of melanocytic lesions\" by University Hospital Basel / CC-BY-NC": 8,
+    "Dr. Julien Anriot": 4
+  }
+}

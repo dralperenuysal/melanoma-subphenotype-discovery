@@ -1,0 +1,33 @@
+{
+  "variant": "cropped",
+  "cramers_v": 0.32722764086126177,
+  "gate0": "PROCEED_WITH_CAVEAT",
+  "batch_acc_raw": 0.7606273958599539,
+  "chance": 0.06666666666666667,
+  "gate5_metrics": {
+    "raw": {
+      "batch_acc": 0.7606273958599539,
+      "mixing": 0.7375658076913395,
+      "bio_silhouette": 0.0023888961877673864
+    },
+    "harmony": {
+      "batch_acc": 0.5780564784053157,
+      "mixing": 1.0943312663103222,
+      "bio_silhouette": 0.0005849651596409596
+    },
+    "combat": {
+      "batch_acc": 0.5923543317147968,
+      "mixing": 0.8436481417770805,
+      "bio_silhouette": 0.00037836967674163396
+    },
+    "harmony_theta_0.5_retry": {
+      "batch_acc": 0.5798415537950422,
+      "mixing": 1.084036191083551,
+      "bio_silhouette": 0.0006477455756705464
+    }
+  },
+  "gate5_pass": false,
+  "theta_used": 1.0,
+  "harmony_vs_combat_ari": 0.4219889154760922,
+  "n_cohort": 2799
+}

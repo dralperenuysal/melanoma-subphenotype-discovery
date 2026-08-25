@@ -1,0 +1,16 @@
+dataset,Melanoma Invasive,Melanoma in situ,"Melanoma, NOS"
+"""Repeated dermoscopic images of melanocytic lesions"" by University Hospital Basel / CC-BY-NC",0.5,0.5,0.0
+Anonymous,0.32390126429861527,0.3696568332329922,0.30644190246839254
+"Department of Dermatology, Hospital Clínic de Barcelona",0.0,0.0,1.0
+"Department of Dermatology, Medical University of Vienna",0.17857142857142858,0.10714285714285714,0.7142857142857143
+"Department of Dermatology, University of Athens, Andreas Syggros Hospital of Skin and Venereal Diseases, Alexander Stratigos, Konstantinos Liopyris",0.5384615384615384,0.46153846153846156,0.0
+Dr. Julien Anriot,0.0,0.0,1.0
+Hospital Clínic de Barcelona,0.0,0.0,1.0
+Hospital Italiano de Buenos Aires,0.0,0.0,1.0
+Imperial College London,0.326271186440678,0.1694915254237288,0.5042372881355932
+MILK study team,0.16,0.08,0.76
+Memorial Sloan Kettering Cancer Center,0.28421052631578947,0.5536842105263158,0.16210526315789472
+Sydney Melanoma Diagnostic Center at Royal Prince Alfred Hospital,0.13043478260869565,0.8695652173913043,0.0
+"Sydney Melanoma Diagnostic Center at Royal Prince Alfred Hospital, Pascale Guitera",0.0,0.11,0.89
+"The University of Queensland Diamantina Institute, The University of Queensland, Dermatology Research Centre",0.11764705882352941,0.7058823529411765,0.17647058823529413
+"ViDIR Group, Department of Dermatology, Medical University of Vienna",0.3333333333333333,0.6470588235294118,0.0196078431372549

@@ -1,0 +1,49 @@
+"""Figure 21: before/after sanity-check for the lesion-segmentation confound fix
+(data/preprocessing/segment_lesion.py). Same palette/layout as figure 20.
+"""
+import os
+
+import cv2
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+INK, SURFACE = "#0b0b0b", "#fcfcfb"
+plt.rcParams.update({"figure.facecolor": SURFACE, "axes.facecolor": SURFACE, "text.color": INK})
+
+CROP_DIR = "data/processed/images_518_cropped_melanoma_only"
+SEG_DIR = "data/processed/images_518_segmented_melanoma_only"
+LABELS_CSV = "clustering/melanoma_only_patchpool_cropped/final_cluster_labels.csv"
+OUT_PNG = "figures/21_lesion_segmentation_before_after.png"
+SEED = 42
+
+if __name__ == "__main__":
+    labels = pd.read_csv(LABELS_CSV)
+    rng = np.random.default_rng(SEED)
+    samples = []
+    for c in sorted(labels["cluster_label"].unique()):
+        ids = labels[labels["cluster_label"] == c]["isic_id"].tolist()
+        n = min(3, len(ids))
+        picks = rng.choice(ids, size=n, replace=False)
+        samples += [(c, iid) for iid in picks]
+
+    fig, axes = plt.subplots(2, len(samples), figsize=(2.2 * len(samples), 4.6))
+    for col, (c, iid) in enumerate(samples):
+        before = cv2.cvtColor(cv2.imread(os.path.join(CROP_DIR, f"{iid}.jpg")), cv2.COLOR_BGR2RGB)
+        after = cv2.cvtColor(cv2.imread(os.path.join(SEG_DIR, f"{iid}.jpg")), cv2.COLOR_BGR2RGB)
+        axes[0, col].imshow(before)
+        axes[0, col].set_title(f"cluster {c}\n{iid}", fontsize=8)
+        axes[1, col].imshow(after)
+        for row in (0, 1):
+            axes[row, col].axis("off")
+    axes[0, 0].set_ylabel("cropped", fontsize=9)
+    axes[1, 0].set_ylabel("segmented", fontsize=9)
+    fig.suptitle("Lesion-segmentation confound fix: before (top) / after (bottom)", fontsize=11)
+    fig.tight_layout()
+    fig.savefig(OUT_PNG, dpi=150)
+    print(f"Saved {OUT_PNG}")
+
+    assert os.path.exists(OUT_PNG)
+    print("sanity check passed")

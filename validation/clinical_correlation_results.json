@@ -1,0 +1,64 @@
+{
+  "skipped": "dermoscopic structure labels (atypical network, blue-white veil, regression structures) not present in ISIC metadata used by this project \u2014 sub-bullet skipped",
+  "noise_excluded": 0,
+  "thickness_test": {
+    "variable": "mel_thick_mm",
+    "test": "kruskal-wallis",
+    "n_per_cluster": {
+      "0": 659
+    },
+    "n_total": 659,
+    "underpowered": true,
+    "reason": "only 1 cluster(s) have >= 10 non-null values; mel_thick_mm is populated almost exclusively within a single cluster, so a cross-cluster test is not meaningful",
+    "statistic": null,
+    "p_value": null
+  },
+  "ulceration_test": {
+    "variable": "mel_ulcer",
+    "test": "chi-square",
+    "n_per_cluster": {
+      "0": 219
+    },
+    "n_total": 219,
+    "underpowered": true,
+    "reason": "only 1 cluster(s) have >= 10 non-null values; mel_ulcer is populated almost exclusively within a single cluster, so a cross-cluster test is not meaningful",
+    "statistic": null,
+    "p_value": null
+  },
+  "diagnosis_crosstab": {
+    "counts": {
+      "0": {
+        "Benign": 12468,
+        "Indeterminate": 1011,
+        "Malignant": 13148
+      },
+      "1": {
+        "Benign": 801,
+        "Indeterminate": 90,
+        "Malignant": 589
+      },
+      "2": {
+        "Benign": 399,
+        "Indeterminate": 31,
+        "Malignant": 166
+      }
+    },
+    "row_pct": {
+      "0": {
+        "Benign": 46.82,
+        "Indeterminate": 3.8,
+        "Malignant": 49.38
+      },
+      "1": {
+        "Benign": 54.12,
+        "Indeterminate": 6.08,
+        "Malignant": 39.8
+      },
+      "2": {
+        "Benign": 66.95,
+        "Indeterminate": 5.2,
+        "Malignant": 27.85
+      }
+    }
+  }
+}

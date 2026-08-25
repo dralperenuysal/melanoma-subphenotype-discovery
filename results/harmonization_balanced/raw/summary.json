@@ -1,0 +1,33 @@
+{
+  "variant": "raw",
+  "cramers_v": 0.32722764086126177,
+  "gate0": "PROCEED_WITH_CAVEAT",
+  "batch_acc_raw": 0.8238678763097367,
+  "chance": 0.06666666666666667,
+  "gate5_metrics": {
+    "raw": {
+      "batch_acc": 0.8238678763097367,
+      "mixing": 0.5403348703145847,
+      "bio_silhouette": 0.004101889207959175
+    },
+    "harmony": {
+      "batch_acc": 0.6713078200868898,
+      "mixing": 0.9176904793871097,
+      "bio_silhouette": 0.0013603538946118043
+    },
+    "combat": {
+      "batch_acc": 0.5916406848964988,
+      "mixing": 0.7028248218975777,
+      "bio_silhouette": 0.0023101280869121227
+    },
+    "harmony_theta_0.5_retry": {
+      "batch_acc": 0.6798818042422694,
+      "mixing": 0.9003102002970474,
+      "bio_silhouette": 0.0015640202905391832
+    }
+  },
+  "gate5_pass": false,
+  "theta_used": 1.0,
+  "harmony_vs_combat_ari": 0.30447779321001456,
+  "n_cohort": 2799
+}
